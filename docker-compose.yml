@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  mssqldatabase:
+    container_name: localDB
+    build:
+      context: ./
+      args:
+        - SA_PASSWORD=${SA_PASSWORD:-thisGetsAutomaticallyReplaced}
+        - WITH_EXAMPLE_DATA=${WITH_EXAMPLE_DATA}
+        - FROM_BACKUP=${FROM_BACKUP}
+    ports:
+      - 1433:1433
