@@ -8,6 +8,7 @@ This repository contains everything required to setup a local MSSQL database + m
 |:-------------:|--------------------------------|--------------------------------------------------------------------------------------------------------|
 | `base`        | `V[major]__[name].sql`         | These scripts are to be executed inside **production** and **development** instances of your database. |
 | `exampleData` | `V[major].[minor]__[name].sql` | These scripts are to be executed only on **development** instances.                                    |
+
 Replace `major` and `minor` with a number [similar to semantic versioning](https://semver.org/) and `name` with any name of your choosing for the change.
 
 For example, you can create an employees table:
